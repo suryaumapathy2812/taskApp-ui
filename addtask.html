@@ -7,14 +7,26 @@
     <title>Document</title>
 </head>
 <body>
+    <header id="header"></header>
+    <main>
+
+    
     <h3>Add Task</h3>
     <form action="listtask.html">
         <label for="taskName">Enter task name</label>
         <input type="text" name="taskName" id="taskName" required autofocus>
         <br/>
         <button>Submit</button>
+        <button type="reset">Reset</button>
     </form>
     <a href="listtask.html">List Tasks</a> <br/>
     <a href="index.html">Home</a>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $("#header").load("_header.html");
+    </script>
+
+</main>
 </body>
 </html>

@@ -1,0 +1,36 @@
+body {
+    font-family: Roboto,sans-serif;
+    background-color: lightyellow;    
+    margin:0px;
+}
+
+header {
+    background-color: #364150; 
+    color:white;
+    padding:10px;
+}
+
+.navbar {
+
+}
+
+a.brand {
+    color:white;    
+    text-decoration: none;
+    padding-right: 30px;
+    margin: 10px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+main {
+    margin:10px;
+}
+
+table {
+    width: 100%;    
+}
