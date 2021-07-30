@@ -1,32 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <header id="header"></header>
     <main>
+        <h3>Add Task</h3>
+        <form action="listtask.html">
+            <label for="userId">Enter User Id</label>
+            <input type="text" name="userId" id="userId" required autofocus>
+            <br />
+            <label for="taskName">Enter task name</label>
+            <input type="text" name="taskName" id="taskName" required>
+            <br />
+            <button>Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <a href="listtask.html">List Tasks</a> <br />
+        <a href="index.html">Home</a>
 
-    
-    <h3>Add Task</h3>
-    <form action="listtask.html">
-        <label for="taskName">Enter task name</label>
-        <input type="text" name="taskName" id="taskName" required autofocus>
-        <br/>
-        <button>Submit</button>
-        <button type="reset">Reset</button>
-    </form>
-    <a href="listtask.html">List Tasks</a> <br/>
-    <a href="index.html">Home</a>
+        <script src="assets/js/jquery.min.js"></script>
+        <script>
+            $("#header").load("_header.html");
+        </script>
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script>
-        $("#header").load("_header.html");
-    </script>
-
-</main>
+    </main>
 </body>
+
 </html>

@@ -10,19 +10,26 @@
     <header id="header">
         
     </header>
+    <main>
     <h3>Login</h3>
     <form action="listtask.html">
-        
+        <div class="form-group">
         <label for="email">Email(*)</label>
-        <input type="email" name="email" id="email" required> <br/>
+        <input class="form-control" type="email" name="email" id="email" required> 
+    </div>
+    <div class="form-group">
         <label for="password">Password(*)</label>
-        <input type="password" name="password" id="password" required> <br/>      
+        <input class="form-control" type="password" name="password" id="password" required> 
+    </div>
+    <div class="form-group">
         <label for="role">Select Role(*)</label>
-        <input type="radio" name="role" value="USER" checked required> USER 
-        <input type="radio" name="role" value="ADMIN" required> ADMIN 
+        <input class="form-check-input" type="radio" name="role" value="USER" checked required> USER 
+        <input class="form-check-input" type="radio" name="role" value="ADMIN" required> ADMIN 
+    </div>
         <br/> 
         <button>Submit</button>
     </form>
+</main>
     <script src="assets/js/jquery.min.js"></script>
     <script>
         $("#header").load("_header.html");

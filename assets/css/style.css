@@ -1,36 +1,63 @@
+:root {
+    --backgroundColor: lightyellow;
+    --headerBackgroundColor: #364150;
+    --headerColor:white;
+    --brandColor:white;
+    --menuLinkColor: white;
+}
+
 body {
-    font-family: Roboto,sans-serif;
-    background-color: lightyellow;    
-    margin:0px;
+  font-family: Roboto, sans-serif;
+  /* background-color: lightyellow; */
+  background-color: var(--backgroundColor);
+  margin: 0px;
 }
 
 header {
-    background-color: #364150; 
-    color:white;
-    padding:10px;
+  /* background-color: #364150; */
+  background-color: var(--headerBackgroundColor);
+  color: var(--headerColor);
+  padding: 10px;
 }
 
 .navbar {
-
 }
 
 a.brand {
-    color:white;    
-    text-decoration: none;
-    padding-right: 30px;
-    margin: 10px;
+  color: var(--brandColor);
+  text-decoration: none;
+  padding-right: 30px;
+  margin: 10px;
 }
 
 .nav-item {
-    color: white;
-    text-decoration: none;
-    padding: 5px;
+  color: var(--menuLinkColor);
+  text-decoration: none;
+  padding: 5px;
 }
 
 main {
-    margin:10px;
+  margin: 10px;
 }
 
-table {
-    width: 100%;    
+.form-group {
+  display: block;
+  margin: 5px;
+}
+
+.form-group > label {
+  display: block;
+  margin: 2px;
+}
+
+.form-control {
+  display: block;
+}
+
+.form-check-inline {
+  display: block;
+}
+
+.form-check-input {
+  display: inline-block;
 }

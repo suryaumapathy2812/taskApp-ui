@@ -1,46 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/table.css">
 </head>
+
 <body>
+
     <header id="header">
         <!--append-->
     </header>
-    <h3>List Tasks</h3>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>#</th><th>Task Name</th><th>Status</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Install Chrome Browser</td>
-                <td>COMPLETED</td>
-                <td><a href="edittask.html">View</a>&nbsp;
-                <a href="listtask.html">Delete</a></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Install Git Client</td>
-                <td>PENDING</td>
-                <td><a href="edittask.html">View</a>&nbsp;
-                    <a href="listtask.html">Delete</a></td>
-            </tr>
+    <main>
+        <h3>List Tasks</h3>
+        <section>
+
+        </section>
+        <section>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Task Name</th>
+                        <th>Priority</th>
+                        <th>Created Date</th>
+                        <th>Created By</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Install Chrome Browser</td>
+                        <td>HIGH</td>
+                        <td>2021-07-01 09:00</td>
+
+                        <td>Naresh</td>
+                        <td>COMPLETED</td>
+                        <td><a href="edittask.html">View</a>&nbsp;
+                            <a href="listtask.html">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Install Git Client</td>
+                        <td>HIGH</td>
+                        <td>2021-07-25 09:00</td>
+                        <td>Suresh</td>
+                        <td>PENDING</td>
+                        <td><a href="edittask.html">View</a>&nbsp;
+                            <a href="listtask.html">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Upgrade VS Code</td>
+                        <td>LOW</td>
+                        <td>2021-07-25 09:00</td>
+                        <td>Suresh</td>
+                        <td>PENDING</td>
+                        <td><a href="edittask.html">View</a>&nbsp;
+                            <a href="listtask.html">Delete</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <a href="addtask.html" data-toggle="modal" data-target="#modelId">Add Task</a>
             
-        </tbody>
-    </table>
-    <a href="addtask.html">Add Task</a>
+        </section>
+    </main>
     <script src="assets/js/jquery.min.js"></script>
     <script>
         $("#header").load("_header.html");
 
     </script>
 </body>
+
 </html>
