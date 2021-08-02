@@ -37,15 +37,14 @@
         event.preventDefault();
         const email = document.querySelector("#email").value;
         const password = document.querySelector("#password").value;
-        
-          const userObj = {
-            username: email,
-            password: password,
-          };
-          console.log(userObj);
-          alert("Successfully LoggedIn");
-          window.location.href = "listtask.html";
-        }
+
+        const userObj = {
+          username: email,
+          password: password,
+        };
+        console.log(userObj);
+        alert("Successfully LoggedIn");
+        window.location.href = "listtask.html";
       }
     </script>
   </body>
