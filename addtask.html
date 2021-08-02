@@ -12,7 +12,7 @@
     <header id="header"></header>
     <main>
         <h3>Add Task</h3>
-        <form action="listtask.html">
+        <form  onsubmit="addTask()">
             <label for="userId">Enter User Id</label>
             <input type="text" name="userId" id="userId" required autofocus>
             <br />
@@ -28,6 +28,22 @@
         <script src="assets/js/jquery.min.js"></script>
         <script>
             $("#header").load("_header.html");
+
+            function addTask(){
+                event.preventDefault();
+                const userId = parseInt(document.querySelector("#userId").value);
+                const taskName = document.querySelector("#taskName").value;
+                const taskObj = { 
+                    "name" : taskName,
+                    "status":"PENDING",
+                    "createdBy": userId,
+                };
+                console.log(taskObj);
+                alert("Successfully Added Task");
+                window.location.href="listtask.html";
+
+
+            }
         </script>
 
     </main>
