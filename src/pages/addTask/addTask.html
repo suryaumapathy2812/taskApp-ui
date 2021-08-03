@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header"></header>
+
+    <main>
+
+        <h3>Add Task</h3>
+
+        <form onsubmit="addTask()">
+
+            <div>
+                <label for="userId">Enter User Id</label>
+                <input type="text" name="userId" id="userId" required autofocus>
+            </div>
+
+            <div>
+                <label for="taskName">Enter task name</label>
+                <input type="text" name="taskName" id="taskName" required>
+            </div>
+
+            <button>Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+
+        <a href="../listTask/listTask.html">List Tasks</a> <br />
+        <a href="../../index.html">Home</a>
+
+
+        <script src="../../assets/js/jquery.min.js"></script>
+        <script src="addTask.js"></script>
+
+    </main>
+</body>
+
+</html>

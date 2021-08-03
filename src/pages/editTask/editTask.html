@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <h3>Update Task</h3>
+
+        <form action="listtask.html">
+
+            <div>
+                <label for="taskName">Enter task name</label>
+                <input type="text" name="taskName" id="taskName" value="Install Chrome" required autofocus>
+            </div>
+
+            <div>
+                <label>Priority:</label>
+                <select name="priority" id="priority" required>
+                    <option value="LOW">Low</option>
+                    <option value="MEDIUM">MEDIUM</option>
+                    <option value="HIGH">HIGH</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Status:</label>
+                <select name="status" id="status" required>
+                    <option value="PENDING">PENDING</option>
+                    <option value="COMPLETED">COMPLETED</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+            <button type="button">Delete</button>
+
+        </form>
+
+        <a href="../listTask/listTask.html">List Tasks</a>
+        <a href="../../index.html">Home</a>
+
+    </main>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="editTask.js"></script>
+
+</body>
+
+</html>
