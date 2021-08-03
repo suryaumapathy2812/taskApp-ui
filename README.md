@@ -1,25 +1,44 @@
 # taskApp-ui
 
 
-### Folder Structure
+## Folder Structure
+
 ```
 src
-    ---> index.html
+├── index.html
+├── main.js
+├── assets
+├── components
+└── pages
+```
 
-    ---> components
-        ---> header
-            ---> header.html
-            ---> header.js
+Assets
+```
+└── assets
+    ├── css
+    │   ├── style.css
+    └── js
+        └── library.min.js
+```
 
-    ---> pages
-        ---> addTask
-            ---> addTask.html
-            ---> addTask.js
-        ---> listTask
-            ---> listTask.html
-            ---> listTask.js
+Components
+```
+└── components
+    ├── header
+    │   ├── header.html
+    │   └── header.js
+    └── footer
+        ├── footer.html
+        └── footer.js
+```
 
-    ---> assets
-        ---> css
-        ---> js
+Pages
+```
+└── pages
+    ├── addTask
+    │   ├── addTask.html
+    │   └── addTask.js
+    └── listTask
+        ├── listTask.html
+        └── listTask.js
 ```
