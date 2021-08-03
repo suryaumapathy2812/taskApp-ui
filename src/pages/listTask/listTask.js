@@ -29,13 +29,16 @@ function displayTasks() {
     ];
 
     let content = "";
-    S
+
     for (let taskObj of tasks) {
         content = content +
             `<tr>
                 <td scope="row">${taskObj.id}</td>
                 <td>${taskObj.name}</td>
                 <td>${taskObj.priority}</td>
+                <td>${taskObj.createdDate}</td>
+                <td>${taskObj.createBy}</td>
+                <td>${taskObj.status}</td>
             </tr>`;
     }
     console.log(content);
